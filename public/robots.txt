@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://iqtest-rust.vercel.app/sitemap.xml
