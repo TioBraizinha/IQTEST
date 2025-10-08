@@ -35,6 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta property="og:url" content="https://iqtest-rust.vercel.app" />
         <meta property="og:site_name" content="Instant IQ" />
       </head>
+        <meta name="google-site-verification" content="Ng8Fr1jAeoQ4rt7I4YMZvSLZv16jiDVARCfAKGs-jtI" />
       <body className={inter.className} style={{ margin: 0, background: '#000', color: '#fff' }}>
         {children}
         <Analytics />
