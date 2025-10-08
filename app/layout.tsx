@@ -1,6 +1,10 @@
 import { Inter } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/react';
 
-export const metadata = { title: 'Instant IQ', description: 'IQ test' };
+export const metadata = { 
+  title: 'Instant IQ', 
+  description: 'IQ test' 
+};
 
 const inter = Inter({
   subsets: ['latin'],
@@ -14,6 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head />
       <body className={inter.className} style={{ margin: 0, background: '#000', color: '#fff' }}>
         {children}
+        <Analytics /> {/* 👈 Aqui o componente do Vercel Analytics */}
       </body>
     </html>
   );
